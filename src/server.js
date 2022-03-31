@@ -24,7 +24,7 @@ app.use("/off", offRouter);
 const PORT = 3003;
 
 
-const handleListening = () => console.log(`Servers listening on port ${PORT}`);
+const handleListening = () => console.log(`Server listening on port ${PORT}`);
 
 app.listen(PORT, handleListening)
 
