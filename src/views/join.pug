@@ -1,0 +1,14 @@
+extends base
+block content 
+    h1 join
+        form(method="POST")
+            input(type="text" required name="username" placeholder="username")
+            input(type="text" required name="id" placeholder="id")
+            input(type="password" required name="password" placeholder="password")
+            input(type="password" required name="confirm" placeholder="confirm")
+            input(type="submit")
+          
+    hr
+    div     
+        span Already have an account?
+        a(href="/login") Login now

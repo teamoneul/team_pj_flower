@@ -1,0 +1,34 @@
+{
+  "name": "team_pj_flower",
+  "version": "1.0.0",
+  "description": "\"team-project\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobready0812/team_pj_flower.git"
+  },
+  "author": "\"daehyeon\"",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bobready0812/team_pj_flower/issues"
+  },
+  "homepage": "https://github.com/bobready0812/team_pj_flower#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11"
+  }
+}
