@@ -16,7 +16,7 @@ export const postJoin = async (req, res) => {
       id,
       password,
     });
-    res.redirect("login");
+    res.redirect("/");
   } catch (error) {
     return res.send("Error");
   }

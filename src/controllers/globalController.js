@@ -3,9 +3,9 @@
 // };
 import User from "../models/User";
 
-export const renderHome = (req, res) => {
+export const renderHome = async (req, res) => {
   const _id = req.params.user;
-  const user = User.findById({ _id });
+  const user = await User.findById({ _id });
   console.log(user);
   return res.render("home", { user: user });
 };
