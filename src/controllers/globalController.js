@@ -9,3 +9,4 @@ export const renderHome = async (req, res) => {
   console.log(user);
   return res.render("home", { user: user });
 };
+
