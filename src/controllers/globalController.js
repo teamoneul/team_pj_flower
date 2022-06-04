@@ -10,3 +10,6 @@ export const renderHome = async (req, res) => {
   return res.render("home", { user: user });
 };
 
+export const prac = (req,res) => {
+  res.render("off/off0006-2");
+}
