@@ -9,3 +9,7 @@ export const renderHome = async (req, res) => {
   console.log(user);
   return res.render("home", { user: user });
 };
+
+export const prac = (req,res) => {
+  res.render("off/off0006-2");
+}
