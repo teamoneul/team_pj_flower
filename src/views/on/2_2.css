@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background22 {
+  width: 368px;
+  height: 796px;
+  background-color: #fde7e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.modal22 {
+  width: 274px;
+  height: 475px;
+  background-color: #fff9f4;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pinkSpan22 {
+  color: #dd9292;
+  margin-top: 40px;
+  font-size: large;
+  font-weight: bolder;
+}
+.id22 {
+  color: #5e452a;
+  font-weight: border;
+  font-size: large;
+}
+.pw22 {
+  color: #5e452a;
+  font-weight: border;
+  font-size: large;
+}
+.nick22 {
+  color: #5e452a;
+  font-weight: border;
+  font-size: large;
+}
+#id22 {
+  border: 0;
+  background-color: #e5e5e5;
+  height: 35px;
+  width: 220px;
+  border-radius: 8px;
+}
+#pw22 {
+  border: 0;
+  background-color: #e5e5e5;
+  height: 35px;
+  width: 220px;
+  border-radius: 8px;
+}
+#nick22 {
+  border: 0;
+  background-color: #e5e5e5;
+  height: 35px;
+  width: 220px;
+  border-radius: 8px;
+}
+.make22 {
+  border: 0;
+  height: 35px;
+  background-color: #dd9292;
+  margin-top: 40px;
+  border-radius: 8px;
+  width: 70px;
+  color: #fff9f4;
+  font-size: medium;
+}
