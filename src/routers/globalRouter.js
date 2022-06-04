@@ -1,5 +1,5 @@
 import express from "express";
-import { main, choose } from "../controllers/globalController";
+import { main, choose, prac } from "../controllers/globalController";
 import {
   getJoin,
   postJoin,
@@ -18,6 +18,6 @@ globalRouter.route("/test").get((req, res) => {
   res.render("on/2_1");
 });
 // globalRouter.route("/login").get(getLogin).post(postLogin);
+globalRouter.get("/prac", prac);
 //로딩 라우터는 나중에 추가
-
 export default globalRouter;
