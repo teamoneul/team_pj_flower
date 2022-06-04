@@ -11,5 +11,5 @@ export const renderHome = async (req, res) => {
 };
 
 export const prac = (req,res) => {
-  res.render("off/off0006-2");
+  res.render("on/6");
 }
