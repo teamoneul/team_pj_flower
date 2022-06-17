@@ -31,16 +31,19 @@ body {
   color: #5e452a;
   font-weight: border;
   font-size: large;
+  margin-left: 60px;
 }
 .pw22 {
   color: #5e452a;
   font-weight: border;
   font-size: large;
+  margin-left: 60px;
 }
 .nick22 {
   color: #5e452a;
   font-weight: border;
   font-size: large;
+  margin-left: 60px;
 }
 #id22 {
   border: 0;
@@ -69,7 +72,8 @@ body {
   background-color: #dd9292;
   margin-top: 40px;
   border-radius: 8px;
-  width: 70px;
+  width: 130px;
+  height: 50px;
   color: #fff9f4;
   font-size: medium;
 }

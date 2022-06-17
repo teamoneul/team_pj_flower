@@ -6,9 +6,10 @@ block content
         .modal
             span.pink 꽃병을 만들려면
             span.pink2 로그인이 필요해요
-            p.id 아이디
-            input#id
-            p.pw 비밀번호
-            input#pw
-            button.login 로그인
-            button.nonAcc 계정이 없다면?
+            form(method="POST") 
+                p.id 아이디
+                input#id(type="text" required name="id" placeholder="id")
+                p.pw 비밀번호
+                input#pw(type="password" required name="password" placeholder="password")
+                input.login(type="submit" value="로그인")
+            button.nonAcc(onClick="location.href='join'") 계정이 없다면?

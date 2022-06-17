@@ -37,10 +37,12 @@ body {
   color: #5e452a;
   font-weight: bolder;
   margin-top: 25px;
+  margin-left: 60px;
 }
 .pw {
   color: #5e452a;
   font-weight: bolder;
+  margin-left: 60px;
 }
 #id {
   border: 0;
@@ -65,15 +67,17 @@ body {
   height: 35px;
   margin-top: 30px;
   font-weight: bolder;
+  width: 120px;
+  height: 60px;
 }
 
 .nonAcc {
   border: 0;
   background-color: #dd9292;
   color: #fff9f4;
-  width: 110px;
-  height: 35px;
+  width: 180px;
+  height: 95px;
   border-radius: 8px;
-  margin-top: 115px;
+  margin-top: 55px;
   font-weight: bolder;
 }

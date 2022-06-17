@@ -6,7 +6,7 @@ export const home = (req, res) => {
 };
 
 export const getJoin = (req, res) => {
-  res.render("join");
+  res.render("on/2_2");
 };
 
 export const postJoin = async (req, res) => {
@@ -27,7 +27,7 @@ export const postJoin = async (req, res) => {
 };
 
 export const getLogin = (req, res) => {
-  res.render("login");
+  res.render("on/2_1");
 };
 
 export const postLogin = async (req, res) => {

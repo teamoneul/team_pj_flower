@@ -5,10 +5,11 @@ block content
     .background22
         .modal22
             span.pinkSpan22 계정 만들기
-            p.id22 아이디
-            input#id22
-            p.pw22 비밀번호
-            input#pw22
-            p.nick22 닉네임
-            input#nick22
-            button.make22 만들기
+            form(method="POST") 
+                p.id22(type="text" required name="id" placeholder="id") 아이디
+                input#id22
+                p.pw22 비밀번호
+                input#pw22(type="password" required name="password" placeholder="password")
+                p.nick22 닉네임
+                input#nick22(type="text" required name="username" placeholder="username")
+                input.make22(type="submit" value="만들기")
