@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background01 {
+    width: 368px; height: 796px;
+    background-color: #FDE7E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.login01 {
+    width: 248px; height: 178px;
+    background-color: #C9986B;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginwhite01 {
+    color: #fff;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.loginbrown101 {
+    color: #5E452A;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.loginbrown201 {
+    color: #5E452A;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.start01 {
+    width: 248px; height: 178px;
+    background-color: #C9986B;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.startwhite01 {
+    color: #fff;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.startbrown101 {
+    color: #5E452A;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.startbrown201 {
+    color: #5E452A;
+    font-size: 30px;
+    font-weight: 700;
+}
+```

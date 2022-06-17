@@ -1,6 +1,10 @@
 import User from "../models/User";
 import bcrypt from "bcrypt";
 
+export const home = (req, res) => {
+  res.render("home");
+};
+
 export const getJoin = (req, res) => {
   res.render("join");
 };
