@@ -8,6 +8,7 @@ import {
 
 const onRouter = express.Router();
 
+onRouter.route("/").get();
 onRouter.get("/:user", profile);
 onRouter.get("/:user/:FB_id", controlPot);
 onRouter.get("/:user/:FB_id/setting", setting);
