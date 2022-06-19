@@ -1,14 +1,18 @@
 import User from "../models/User";
 import bcrypt from "bcrypt";
 
+export const home = (req, res) => {
+  res.render("home");
+};
+
 export const getJoin = (req, res) => {
-  res.render("join");
+  res.render("on/2_2");
 };
 
 export const postJoin = async (req, res) => {
   const { username, id, password, confirm } = req.body;
   if (password !== confirm) {
-    return res.send("Error");
+    return res.send("Confirm Error");
   }
   try {
     await User.create({
@@ -16,14 +20,16 @@ export const postJoin = async (req, res) => {
       id,
       password,
     });
-    res.redirect("/");
+    // res.redirect("/");
+    let req1 = { body: { id: id, password: password } };
+    postLogin(req1, res);
   } catch (error) {
-    return res.send("Error");
+    return res.send(`Error : ${error}`);
   }
 };
 
 export const getLogin = (req, res) => {
-  res.render("login");
+  res.render("on/2_1");
 };
 
 export const postLogin = async (req, res) => {

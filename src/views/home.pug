@@ -1,7 +1,38 @@
+//- extends base
+//- block content
+//-     if(user)
+//-         p #{user.username}
+//-     else 
+//-         p 로그인이 되어있지 않습니다
+//-     p
+//-     a(href="/on/start") 꽃병 만들기
+//-     br
+//-     a(href="/off") 편지 쓰기
+
 extends base
 block content
-    p #{user.username}
-    p
-    a(href="/on") 꽃병 만들기
-    br
-    a(href="/off") 편지 쓰기
+
+    .background01
+        if(user)
+            p ID : #{user.username}
+            br
+            .login01(onclick="location.href='/on/create';")
+                span.loginWhite01 롤링페이퍼를 만드려면?
+                span.loginBrown101 꽃병
+                span.loginBrown201 만들기
+            .start01
+                span.startWhite01 링크에 초대되었다면?
+                span.startBrown101 편지
+                span.startBrown201 쓰기
+        else
+            small 로그인이 되어있지 않습니다.
+            br
+            .login01(onclick="location.href='/login';")
+                span.loginWhite01 계정이 있어요!
+                span.loginBrown101 로그인하고
+                span.loginBrown201 시작하기
+            
+            .start01
+                span.startWhite01 계정이 없어도 편지를 쓸 수 있어요!
+                span.startBrown101 바로
+                span.startBrown201 시작하기
