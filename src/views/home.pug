@@ -1,7 +1,7 @@
 //- extends base
 //- block content
 //-     if(user)
-//-         p #{user.username}
+//-          p #{user.username}
 //-     else 
 //-         p 로그인이 되어있지 않습니다
 //-     p
@@ -15,8 +15,9 @@ block content
     .background01
         if(user)
             p ID : #{user.username}
+            p _ID : #{user._id}
             br
-            .login01(onclick="location.href='/on/create';")
+            .login01(onclick="location.href='/" + user._id + "/create';")
                 span.loginWhite01 롤링페이퍼를 만드려면?
                 span.loginBrown101 꽃병
                 span.loginBrown201 만들기

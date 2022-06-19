@@ -22,6 +22,7 @@ app.use("/on", express.static("uploads"));
 
 const PORT = 3003;
 
-const handleListening = () => console.log(`Server listening on port ${PORT}`);
+const handleListening = () =>
+  console.log(`Server listening on port ${PORT}\nhttp://localhost:3003`);
 
 app.listen(PORT, handleListening);

@@ -13,3 +13,7 @@ export const setting = (req, res) => {
 export const write = (req, res) => {
   res.send("편지 추가");
 };
+
+export const createLetter = (req, res) => {
+  res.render("on/4_1");
+};
