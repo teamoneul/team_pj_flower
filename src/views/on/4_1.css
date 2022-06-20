@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   box-shadow: 2px 2px 3px 1px #edc6c4;
+  justify-content: center;
 }
 .owner41 {
   color: #5e452a;
@@ -28,6 +29,15 @@ body {
   font-weight: 600;
   margin-top: 20px;
 }
+
+.place41 {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .name41 {
   border: 0;
   height: 35px;
@@ -66,10 +76,19 @@ body {
   border: 0;
   margin-left: 165px;
   width: 55px;
-  height: 28px;
+  height: 35px;
   background-color: #dd9292;
   color: #fde7e2;
   font-weight: bolder;
   font-size: 15px;
   border-radius: 8px;
+  padding: 0;
+}
+
+.formCss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: -50px;
 }
