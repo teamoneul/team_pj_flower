@@ -1,10 +1,6 @@
 import express from "express";
-import {
-  profile,
-  setting,
-  write,
-  createLetter,
-} from "../controllers/onController";
+import { createLetter } from "../controllers/letterController";
+import { profile, setting, write } from "../controllers/onController";
 
 const onRouter = express.Router();
 
