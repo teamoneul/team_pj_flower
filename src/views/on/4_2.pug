@@ -5,12 +5,12 @@ block content
     .background42
         .modal42
             span.birth42 요한 님의 생일은?
-            form(action="3" method="GET")
+            form(action="3" method="POST")
                 .date42
                     .box42
-                        input.month42(type='number')
+                        input.month42(type='number' required name="month")
                         span.monthSpan42 월
-                        input.day42(type='number')
+                        input.day42(type='number' required name="day")
                         span.daySpan42 일
                     button.next42 다음 >
             .dote42
