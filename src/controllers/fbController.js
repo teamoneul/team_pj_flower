@@ -12,7 +12,7 @@ const create_ID = (id) => {
   bottleData[id] = {};
 };
 
-export const postCreate = (req, res) => {
+export const postCreate = async (req, res) => {
   let url = req.originalUrl;
   url = url.substr(-1);
   const _id = req.params.user;
@@ -37,9 +37,5 @@ export const postCreate = (req, res) => {
   }
 
   if (url == "4") {
-    res.send(
-      `${bottleData[_id].name}님의 꽃병, 축하 날짜는 ${bottleData[_id].month}월 ${bottleData[_id].day}일`
-    );
-    console.log(bottleData);
   }
 };
