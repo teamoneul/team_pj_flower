@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
 import FlowerBottle from "../models/flowerBottle";
+import User from "../models/User";
 
 export const getCreate = (req, res) => {
   res.render("on/4_1");
@@ -37,5 +37,31 @@ export const postCreate = async (req, res) => {
   }
 
   if (url == "4") {
+    let date = new Date();
+    const { username } = await User.findById(_id);
+
+    const completeDate = new Date(
+      `${date.getFullYear()}-0${bottleData[_id].month}-0${bottleData[_id].day}`
+    );
+
+    const { flowerType } = req.body;
+
+    try {
+      await FlowerBottle.create({
+        creater: username,
+        owner: bottleData[_id].name,
+        createDate: new Date(),
+        completeDate,
+        flowerType,
+        letterCount: 0,
+        letter: {},
+      });
+      let test = await FlowerBottle.find({ creater: username });
+      res.send("[" + username + "]" + " 생성자가 만든 꽃병은 : " + test);
+    } catch (error) {
+      res.send(error);
+    }
   }
 };
+
+export const getBottle = (req, res) => {};
