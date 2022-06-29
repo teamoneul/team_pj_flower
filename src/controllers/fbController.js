@@ -1,6 +1,8 @@
 import FlowerBottle from "../models/flowerBottle";
 import User from "../models/User";
 
+const randomString = require("randomstring");
+
 export const getCreate = (req, res) => {
   res.render("on/4_1");
 };
@@ -45,22 +47,37 @@ export const postCreate = async (req, res) => {
     );
 
     const { flowerType } = req.body;
+    let hiddenCode = randomString.generate(7);
+    // 유효성 테스트를 위해 고의로 중복 키를 넣어봄 // 성공
+    // let hiddenCode = "8WWz7PN";
 
-    try {
-      await FlowerBottle.create({
-        creater: username,
-        owner: bottleData[_id].name,
-        createDate: new Date(),
-        completeDate,
-        flowerType,
-        letterCount: 0,
-        letter: {},
-      });
-      let test = await FlowerBottle.find({ creater: username });
-      res.send("[" + username + "]" + " 생성자가 만든 꽃병은 : " + test);
-    } catch (error) {
-      res.send(error);
-    }
+    const generateBottle = async () => {
+      let bool = await FlowerBottle.find({ hiddenCode });
+
+      if (bool.length === 0) {
+        try {
+          await FlowerBottle.create({
+            creater: username,
+            owner: bottleData[_id].name,
+            createDate: new Date(),
+            completeDate,
+            flowerType,
+            letterCount: 0,
+            letter: {},
+            hiddenCode,
+          });
+          let test = await FlowerBottle.find({ creater: username });
+          res.send("[" + username + "]" + " 생성자가 만든 꽃병은 : " + test);
+        } catch (error) {
+          res.send(error);
+        }
+      } else {
+        hiddenCode = randomString.generate(7);
+        generateBottle();
+      }
+    };
+
+    generateBottle();
   }
 };
 

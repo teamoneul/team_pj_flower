@@ -8,6 +8,7 @@ const flowerBottleSchema = new mongoose.Schema({
   flowerType: { type: String, required: true },
   letterCount: { type: Number, required: true },
   leter: { type: Array },
+  hiddenCode: { type: String, required: true, unique: true },
 });
 
 const FlowerBottle = mongoose.model("FlowerBottle", flowerBottleSchema);
